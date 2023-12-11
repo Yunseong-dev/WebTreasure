@@ -1,0 +1,62 @@
+	<!DOCTYPE html>
+	<html>
+
+	<head>
+
+		<title>WebTreasure</title>
+		<link rel="stylesheet" href="./assets/css/stlye.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap">
+
+	</head>
+
+	<body>
+
+		<div id="map"></div>
+
+		<aside>
+			
+
+			<div id="locationSearch">
+				<input type="text" id="locationInput" placeholder="지역을 입력하세요">
+				<button id="settingLocation">지역 설정</button>
+				<h3 id="changeLocation"></h3>
+			</div>
+
+			<br><br>
+
+			<div id="score">보물을 찾은 횟수: <span id="scoreCount">0</span></div>
+			<div id="uptime">플레이 타임: <span id="siteUptime">0시간 0분 0초</span></div>
+
+			<br><br>
+
+			<button id="randomTreasure">보물 랜덤 위치 조정</button>
+			<h3 id="treasureLocationMessage"></h3>
+
+			<br>
+
+			<div id="nearbyInfo">
+				<h2>보물 주변 정보</h2>
+				<ul id="infoList"></ul>
+			</div>
+
+			<br><br>
+
+			<div class="button-group">
+			<button id="getHint">힌트 보기</button>
+			<button id="showAnswer">정답 보기</button>
+			</div>
+			<div id="hintInfo">
+				<h3 id="hintText"></h3>
+				<h3 id="answerText"></h3>
+			</div>
+
+			<a href="https://github.com/devyun-kr/WebTraesure"><button class="link" >소스코드 보기</button></a>
+		</aside>
+
+		<script
+			src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=54154512f1b79168b6672c9a5065b736&libraries=services"></script>
+		<script src="./assets/js/script.js"></script>
+
+	</body>
+
+	</html>
